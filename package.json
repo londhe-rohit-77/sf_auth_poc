@@ -1,0 +1,17 @@
+{
+  "name": "sf-connect-poc",
+  "version": "1.0.0",
+  "description": "Salesforce OAuth POC - Clientell-style connection flow",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && node server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "keywords": ["salesforce", "oauth", "poc"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
